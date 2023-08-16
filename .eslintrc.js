@@ -3,7 +3,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['airbnb', 'aribnb/hooks', 'plugin:prettier/recommended'],
+	extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
 	overrides: [
 		{
 			env: {
@@ -30,6 +30,8 @@ module.exports = {
 				namedComponents: 'arrow-function',
 			},
 		],
+		'react/prop-types': 'off',
+		'react/jsx-filename-extension': 'off',
 	},
 	plugins: ['prettier'],
 };
