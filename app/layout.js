@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import './globals.css';
 import { Inter } from 'next/font/google';
 

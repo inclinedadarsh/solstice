@@ -31,7 +31,15 @@ module.exports = {
 			},
 		],
 		'react/prop-types': 'off',
-		'react/jsx-filename-extension': 'off',
+		'import/extensions': [
+			'error',
+			'never',
+			{
+				json: 'always',
+				jsx: 'never',
+			},
+		],
+		'import/no-unresolved': [0, { ignore: ['^@/'] }],
 	},
 	plugins: ['prettier'],
 };
