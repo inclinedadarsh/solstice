@@ -3,32 +3,33 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ["airbnb", "aribnb/hooks"],
+	extends: ['airbnb', 'aribnb/hooks', 'plugin:prettier/recommended'],
 	overrides: [
 		{
 			env: {
 				node: true,
 			},
-			files: [".eslintrc.{js,cjs}"],
+			files: ['.eslintrc.{js,cjs}'],
 			parserOptions: {
-				sourceType: "script",
+				sourceType: 'script',
 			},
 		},
 	],
 	parserOptions: {
-		ecmaVersion: "latest",
-		sourceType: "module",
+		ecmaVersion: 'latest',
+		sourceType: 'module',
 	},
 	rules: {
-		"react/react-in-jsx-scope": "off",
-		indent: ["error", "tab"],
-		"no-tabs": "off",
-		"react/jsx-indent": ["error", "tab"],
-		"react/function-component-definition": [
-			"error",
+		'react/react-in-jsx-scope': 'off',
+		indent: ['error', 'tab'],
+		'no-tabs': 'off',
+		'react/jsx-indent': ['error', 'tab'],
+		'react/function-component-definition': [
+			'error',
 			{
-				namedComponents: "arrow-function",
+				namedComponents: 'arrow-function',
 			},
 		],
 	},
+	plugins: ['prettier'],
 };
