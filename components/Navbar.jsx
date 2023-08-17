@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { LogOut } from 'lucide-react';
+import CustomButton from './CustomButton';
 
 const links = [
 	{
@@ -49,12 +51,12 @@ const Navbar = () => {
 						</Link>
 					</li>
 				))}
-				<button
-					type="button"
-					className="px-5 py-3 font-semibold border-2 rounded-lg text-sm border-secondary-bg hover:bg-secondary-bg dark:border-secondary-bg--dark dark:hover:bg-secondary-bg--dark"
-				>
-					Logout
-				</button>
+				<CustomButton
+					type="secondary"
+					text="Logout"
+					url="/"
+					icon={<LogOut size={20} strokeWidth={1.5} />}
+				/>
 			</ul>
 		</nav>
 	);

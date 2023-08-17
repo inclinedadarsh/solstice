@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -17,6 +19,9 @@ module.exports = {
 			'secondary-bg--dark': '#1e293b',
 			'primary-text--dark': '#fff',
 			'secondary-text--dark': '#94a3b8',
+
+			transparent: 'rgba(0, 0, 0, 0)',
+			skyblue: colors.sky,
 		},
 	},
 	plugins: [],

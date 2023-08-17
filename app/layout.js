@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
 	return (
 		<html lang="en">
 			<body
-				className={`${inter.className} bg-primary-bg text-primary-text dark:bg-primary-bg--dark dark:text-primary-text--dark container mx-auto py-4 min-h-screen flex flex-col justify-between`}
+				className={`${inter.className} bg-primary-bg text-primary-text dark:bg-primary-bg--dark dark:text-primary-text--dark container w-5/6 mx-auto py-4 min-h-screen flex flex-col justify-between gap-12`}
 			>
 				<Navbar />
 				{children}

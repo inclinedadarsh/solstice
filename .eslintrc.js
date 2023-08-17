@@ -37,6 +37,7 @@ module.exports = {
 			{
 				json: 'always',
 				jsx: 'never',
+				png: 'always',
 			},
 		],
 		'import/no-unresolved': [0, { ignore: ['^@/'] }],
