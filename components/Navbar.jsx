@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { LogOut } from 'lucide-react';
 import CustomButton from './CustomButton';
+import DarkModeToggle from './DarkModeToggle';
 
 const links = [
 	{
@@ -44,11 +45,10 @@ const Navbar = () => {
 				Solstice
 			</Link>
 			<ul className="flex gap-5 items-center">
+				<DarkModeToggle />
 				{links.map((item) => (
-					<li>
-						<Link href={item.url} key={item.id}>
-							{item.title}
-						</Link>
+					<li key={item.id}>
+						<Link href={item.url}>{item.title}</Link>
 					</li>
 				))}
 				<CustomButton

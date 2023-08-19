@@ -17,6 +17,9 @@ module.exports = {
 				applications:
 					"linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80')",
 			},
+			transitionProperty: {
+				absolute: 'top, right, bottom, left',
+			},
 		},
 		colors: {
 			'primary-bg': '#fff',
@@ -34,4 +37,5 @@ module.exports = {
 		},
 	},
 	plugins: [],
+	darkMode: 'class',
 };
